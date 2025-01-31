@@ -1,0 +1,74 @@
+<header>
+  <h1>People Medicine</h1>
+  <p>Your trusted health companion for medicines, dietary advice, and government schemes.</p>
+</header>
+
+<main>
+  <!-- Disease Search Section -->
+  <section id="search">
+    <label for="disease">Select a disease:</label>
+    <select id="disease" name="disease" aria-label="Select disease">
+      <option value="Fever">Fever</option>
+      <option value="Cold">Cold</option>
+      <option value="Cough">Cough</option>
+      <option value="Headache">Headache</option>
+      <option value="BodyPain">Body Pain</option>
+      <option value="Diarrhea">Diarrhea</option>
+      <option value="KneePain">Knee Pain</option>
+      <option value="Alzheimer">Alzheimer's Disease</option>
+      <option value="Asthma">Asthma</option>
+      <option value="Cancer">Cancer</option>
+      <option value="Diabetes">Diabetes</option>
+      <option value="COVID19">COVID-19</option>
+      <option value="Hypertension">Hypertension</option>
+      <option value="Tuberculosis">Tuberculosis</option>
+      <option value="KidneyDisease">Kidney Disease</option>
+      <option value="Stroke">Stroke</option>
+      <option value="Arthritis">Arthritis</option>
+      <option value="Anemia">Anemia</option>
+      <option value="HeartDisease">Heart Disease</option>
+      <option value="Obesity">Obesity</option>
+      <option value="LiverDisease">Liver Disease</option>
+      <option value="Dengue">Dengue</option>
+      <option value="Typhoid">Typhoid</option>
+    </select>
+    <button onclick="searchDisease()">Search</button>
+  </section>
+
+  <!-- Results Section -->
+  <section id="results">
+    <h2>Results</h2>
+    <p id="output">Select a disease to see details.</p>
+    
+    <h3>Prescribed Medications</h3>
+    <ul id="medications"></ul>
+
+    <h3>Food Recommendations</h3>
+    <p><strong>Recommended:</strong> <span id="food-recommended"></span></p>
+    <p><strong>Avoid:</strong> <span id="food-avoid"></span></p>
+
+    <h3>Government Schemes</h3>
+    <ul id="govt-schemes"></ul>
+  </section>
+
+  <!-- Doctor Consultation & Premium Section -->
+  <section id="premium">
+    <h2>Doctor Consultation</h2>
+    <p>Subscribe to premium to get detailed medical advice, medicines, and more.</p>
+    <p><strong>Monthly Subscription:</strong> ₹500 (Now ₹299 + ₹1 tax).</p>
+    <button onclick="subscribePremium()">Subscribe to Premium</button>
+  </section>
+
+  <!-- Voice Assistant -->
+  <section id="voice-assistant">
+    <h2>Voice Assistant</h2>
+    <button onclick="startVoiceAssistant()">Activate Voice Assistant</button>
+    <p id="voice-feedback"></p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 People Medicine | All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
